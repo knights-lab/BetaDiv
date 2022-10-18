@@ -57,7 +57,7 @@ custom_corr <- function (data, mapping, ...) {
     geom_blank(mapping) +
     geom_smooth(mapping, method="lm", linetype="dashed") +
     annotation_custom(grid::textGrob(paste0("corr: ", round(my_corr, 2)), gp=gpar(fontsize=16)),
-                      #xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
+                      xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
   p
 }
 
